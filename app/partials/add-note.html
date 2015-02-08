@@ -1,0 +1,60 @@
+<!-- The theme for this page is http://bootswatch.com/paper/ -->
+<div class="docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="forms">Syntactic</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="well bs-component">
+              <form class="form-horizontal" ng-submit="submit()" ng-controller="AddNoteCtrl">
+                <fieldset>
+                  <div class="form-group">
+                    <label for="inputTitle" class="col-lg-2 control-label">Title</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" ng-model='title' id="titleInput" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label">Text</label>
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="3" id="textInput"></textarea>
+                      <span class="help-block">We'll learn your text and get it organized</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="reset" class="btn btn-default">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
+          </div>
+          <div class="col-lg-2 col-lg-offset-1">
+
+              <form class="bs-component">
+                <legend>Directives</legend>
+                <div class="form-group">
+                  <label class="control-label" for="focusedInput">[type]: e.g. [task], [data]</label>
+                  <input class="form-control" id="focusedInput" type="text" value="">
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label" for="focusedInput">@topic: e.g. @europe</label>
+                  <input class="form-control" id="focusedInput" type="text" value="">
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label" for="focusedInput">#relate #to: #trip #shopping</label>
+                  <input class="form-control" id="focusedInput" type="text" value="">
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>

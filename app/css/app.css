@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'contra';
+  src: url('fonts/Contra.ttf');
+}
+body {
+  padding-top: 5px;
+}
+.page-header h1 {
+  font-size: 3em;
+  font-family: contra;
+}
+.row {
+  margin-left: 10px;
+  margin-right: 5px;
+}
